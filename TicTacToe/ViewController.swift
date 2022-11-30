@@ -85,7 +85,11 @@ class ViewController: UIViewController {
            }else if(ticTacList[2] == "O" && ticTacList[4] == "O" && ticTacList[6] == "O" ) {
             messager.text = "O Wins!"}
         
-        clearBoard()
+        if(ticTacList[0] == "X" && ticTacList[4] == "X" && ticTacList[8] == "X"){
+            messager.text = "X wins"
+           }else if(ticTacList[0] == "O" && ticTacList[4] == "O" && ticTacList[8] == "O" ) {
+            messager.text = "O Wins!"}
+        
     }
     
     
@@ -95,22 +99,35 @@ class ViewController: UIViewController {
             
             ticTacList = ["", "", "","","","","","",""]
             for buttons in buttonLIST {
-                buttons.setTitle("", for: .normal)
+               // buttons.setTitle("", for: .normal)
+                buttons.titleLabel?.text = ""
                
         }
-           
+        }else{
+            ticTacList = ["", "", "","","","","","",""]
+            for buttons in buttonLIST {
+               // buttons.setTitle("", for: .normal)
+                buttons.titleLabel?.text = ""
+        }
+        }
+    }
+    
+    @IBAction func playAgainButton(_ sender: UIButton) {
+        count = 0
+       clearBoard()
+        messager.text = "X's turn"
         
-            
-            
-            
-        }
-        }
+    }
+    
+    
+    
     
     @IBAction func buttons(_ sender: UIButton) {
         print("\(count)")
         print("\(ticTacList)")
-    if(sender.titleLabel?.text == nil ){
-            count += 1
+        count += 1
+    //if(sender.titleLabel?.text == nil ){
+            //count += 1
             if(count % 2 == 0){
              sender.setTitle("O", for: .normal)
                 ticTacList[sender.tag] = "O"
@@ -122,12 +139,16 @@ class ViewController: UIViewController {
                 ticTacList[sender.tag] = "X"
 
             }
-            }
+            //}
+        
+        
+       
         
         
         
         winner()
         print("\(ticTacList)")
+        
         }
     
     
