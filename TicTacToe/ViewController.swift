@@ -126,8 +126,6 @@ class ViewController: UIViewController {
         print("\(count)")
         print("\(ticTacList)")
         count += 1
-    //if(sender.titleLabel?.text == nil ){
-            //count += 1
             if(count % 2 == 0){
              sender.setTitle("O", for: .normal)
                 ticTacList[sender.tag] = "O"
@@ -139,14 +137,9 @@ class ViewController: UIViewController {
                 ticTacList[sender.tag] = "X"
 
             }
-            //}
         
         
-       
-        
-        
-        
-        winner()
+    winner()
         print("\(ticTacList)")
         
         }
