@@ -16,6 +16,7 @@
 		A936F9BC29361875003D25F8 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A936F9BB29361875003D25F8 /* TicTacToeTests.swift */; };
 		A936F9C629361875003D25F8 /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A936F9C529361875003D25F8 /* TicTacToeUITests.swift */; };
 		A936F9C829361875003D25F8 /* TicTacToeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A936F9C729361875003D25F8 /* TicTacToeUITestsLaunchTests.swift */; };
+		A936FA4D293780BB003D25F8 /* datorr.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A936FA4C293780BB003D25F8 /* datorr.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A936F9C129361875003D25F8 /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A936F9C529361875003D25F8 /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		A936F9C729361875003D25F8 /* TicTacToeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A936FA4C293780BB003D25F8 /* datorr.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = datorr.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				A936F9A829361874003D25F8 /* ViewController.swift */,
 				A936F9AA29361874003D25F8 /* Main.storyboard */,
 				A936F9AD29361875003D25F8 /* Assets.xcassets */,
+				A936FA4C293780BB003D25F8 /* datorr.jpeg */,
 				A936F9AF29361875003D25F8 /* LaunchScreen.storyboard */,
 				A936F9B229361875003D25F8 /* Info.plist */,
 			);
@@ -234,6 +237,7 @@
 				A936F9B129361875003D25F8 /* LaunchScreen.storyboard in Resources */,
 				A936F9AE29361875003D25F8 /* Assets.xcassets in Resources */,
 				A936F9AC29361874003D25F8 /* Main.storyboard in Resources */,
+				A936FA4D293780BB003D25F8 /* datorr.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8Z22M8AKC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -449,7 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TicTacToe;
+				PRODUCT_BUNDLE_IDENTIFIER = tictactoe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8Z22M8AKC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -476,7 +482,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.TicTacToe;
+				PRODUCT_BUNDLE_IDENTIFIER = tictactoe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -11,6 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var player1outlet: UITextField!
+   
+    @IBOutlet weak var playagainButton: UIButton!
+    @IBOutlet weak var player2outlet: UITextField!
+    var playerOne : String = "X"
+    var playerTwo : String = "O"
     @IBOutlet weak var a1Button: UIButton!
     @IBOutlet weak var messager: UILabel!
     @IBOutlet weak var a2Button: UIButton!
@@ -24,6 +30,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var c3Button: UIButton!
     var ticTacList = ["", "", "","","","","","",""]
     var buttonLIST = [UIButton]()
+    var playAgainCount : Int = 0
+    var turn : Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +50,17 @@ class ViewController: UIViewController {
         buttonLIST.append(c3Button)
        
         
+    
+        
+        
+        
+        
         
        
         
     }
+   
+   
     func winner(){
        //winning logic
         
@@ -113,30 +128,42 @@ class ViewController: UIViewController {
     }
     
     @IBAction func playAgainButton(_ sender: UIButton) {
-        count = 0
-       clearBoard()
-        messager.text = "X's turn"
+        clearBoard()
+       
+        playerOne = player1outlet.text ?? "O"
+        playerTwo = player2outlet.text ?? "X"
+        messager.text = "\(playerTwo)'s turn"
+        player1outlet.text = "O"
+        player2outlet.text = "X"
+        turn = true
         
+        
+            playagainButton.setTitle("Play again", for: .normal)
+            
     }
     
     
-    
-    
     @IBAction func buttons(_ sender: UIButton) {
+        
         print("\(count)")
         print("\(ticTacList)")
-        count += 1
+        
     //if(sender.titleLabel?.text == nil ){
             //count += 1
-            if(count % 2 == 0){
+            if(turn == false){
+               
              sender.setTitle("O", for: .normal)
                 ticTacList[sender.tag] = "O"
-                messager.text = "X´s turn"
+                messager.text = "\(playerOne)´s turn"
+                turn = true
                 
-            }else if (count % 2 != 0)
+            }else
         {sender.setTitle("X", for: .normal)
-                messager.text = "O's turn"
+                //if (player2==Robotplayer){
+                // player2 = robotplayer}
+                messager.text = "\(playerTwo)'s turn"
                 ticTacList[sender.tag] = "X"
+                turn = false
 
             }
             //}
