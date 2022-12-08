@@ -147,11 +147,16 @@ class ViewController: UIViewController {
         
         print("\(count)")
         print("\(ticTacList)")
+<<<<<<< HEAD
         
     //if(sender.titleLabel?.text == nil ){
             //count += 1
             if(turn == false){
                
+=======
+        count += 1
+            if(count % 2 == 0){
+>>>>>>> 9ab4c91a233a0d191cfbee08eb3808e77151c026
              sender.setTitle("O", for: .normal)
                 ticTacList[sender.tag] = "O"
                 messager.text = "\(playerOne)´s turn"
@@ -166,14 +171,9 @@ class ViewController: UIViewController {
                 turn = false
 
             }
-            //}
         
         
-       
-        
-        
-        
-        winner()
+    winner()
         print("\(ticTacList)")
         
         }
