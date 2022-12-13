@@ -17,6 +17,13 @@
 		A936F9C629361875003D25F8 /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A936F9C529361875003D25F8 /* TicTacToeUITests.swift */; };
 		A936F9C829361875003D25F8 /* TicTacToeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A936F9C729361875003D25F8 /* TicTacToeUITestsLaunchTests.swift */; };
 		A936FA4D293780BB003D25F8 /* datorr.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A936FA4C293780BB003D25F8 /* datorr.jpeg */; };
+		A996FB6729439580004E3A30 /* firstpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996FB6629439580004E3A30 /* firstpageViewController.swift */; };
+		A996FB6929439C51004E3A30 /* humanPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996FB6829439C51004E3A30 /* humanPageViewController.swift */; };
+		A996FB6B29439C63004E3A30 /* robotPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996FB6A29439C63004E3A30 /* robotPageViewController.swift */; };
+		A996FB6D2947A926004E3A30 /* BoardUpdateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996FB6C2947A926004E3A30 /* BoardUpdateDelegate.swift */; };
+		A9ED1F05294112A400EECAD5 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED1F04294112A400EECAD5 /* Board.swift */; };
+		A9ED1F812941E47300EECAD5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED1F802941E47300EECAD5 /* Player.swift */; };
+		A9ED1F832941E9BE00EECAD5 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED1F822941E9BE00EECAD5 /* Robot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		A936F9C529361875003D25F8 /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		A936F9C729361875003D25F8 /* TicTacToeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A936FA4C293780BB003D25F8 /* datorr.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = datorr.jpeg; sourceTree = "<group>"; };
+		A996FB6629439580004E3A30 /* firstpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstpageViewController.swift; sourceTree = "<group>"; };
+		A996FB6829439C51004E3A30 /* humanPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = humanPageViewController.swift; sourceTree = "<group>"; };
+		A996FB6A29439C63004E3A30 /* robotPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = robotPageViewController.swift; sourceTree = "<group>"; };
+		A996FB6C2947A926004E3A30 /* BoardUpdateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardUpdateDelegate.swift; sourceTree = "<group>"; };
+		A9ED1F04294112A400EECAD5 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		A9ED1F802941E47300EECAD5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A9ED1F822941E9BE00EECAD5 /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +117,9 @@
 			children = (
 				A936F9A429361874003D25F8 /* AppDelegate.swift */,
 				A936F9A629361874003D25F8 /* SceneDelegate.swift */,
-				A936F9A829361874003D25F8 /* ViewController.swift */,
-				A936F9AA29361874003D25F8 /* Main.storyboard */,
+				A9ED1EC5293F5B6A00EECAD5 /* Models */,
+				A9ED1EC4293F5B5000EECAD5 /* controllers */,
+				A9ED1EC3293F5B3E00EECAD5 /* View */,
 				A936F9AD29361875003D25F8 /* Assets.xcassets */,
 				A936FA4C293780BB003D25F8 /* datorr.jpeg */,
 				A936F9AF29361875003D25F8 /* LaunchScreen.storyboard */,
@@ -128,6 +143,36 @@
 				A936F9C729361875003D25F8 /* TicTacToeUITestsLaunchTests.swift */,
 			);
 			path = TicTacToeUITests;
+			sourceTree = "<group>";
+		};
+		A9ED1EC3293F5B3E00EECAD5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A936F9AA29361874003D25F8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9ED1EC4293F5B5000EECAD5 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A936F9A829361874003D25F8 /* ViewController.swift */,
+				A996FB6829439C51004E3A30 /* humanPageViewController.swift */,
+				A996FB6A29439C63004E3A30 /* robotPageViewController.swift */,
+				A996FB6629439580004E3A30 /* firstpageViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		A9ED1EC5293F5B6A00EECAD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9ED1F04294112A400EECAD5 /* Board.swift */,
+				A9ED1F802941E47300EECAD5 /* Player.swift */,
+				A996FB6C2947A926004E3A30 /* BoardUpdateDelegate.swift */,
+				A9ED1F822941E9BE00EECAD5 /* Robot.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +308,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A936F9A929361874003D25F8 /* ViewController.swift in Sources */,
+				A9ED1F812941E47300EECAD5 /* Player.swift in Sources */,
+				A996FB6D2947A926004E3A30 /* BoardUpdateDelegate.swift in Sources */,
 				A936F9A529361874003D25F8 /* AppDelegate.swift in Sources */,
+				A9ED1F05294112A400EECAD5 /* Board.swift in Sources */,
+				A996FB6B29439C63004E3A30 /* robotPageViewController.swift in Sources */,
+				A9ED1F832941E9BE00EECAD5 /* Robot.swift in Sources */,
+				A996FB6929439C51004E3A30 /* humanPageViewController.swift in Sources */,
+				A996FB6729439580004E3A30 /* firstpageViewController.swift in Sources */,
 				A936F9A729361874003D25F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,7 +506,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tictactoe;
+				PRODUCT_BUNDLE_IDENTIFIER = josefinhellgren.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -482,7 +534,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tictactoe;
+				PRODUCT_BUNDLE_IDENTIFIER = josefinhellgren.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
