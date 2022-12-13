@@ -10,6 +10,7 @@ import UIKit
 class robotPageViewController: UIViewController , BoardUpdateDelegate{
     
     @IBOutlet weak var robotImage: UIImageView!
+    
     @IBOutlet weak var coolRobotName: UILabel!
     @IBOutlet weak var playerName: UITextField!
     lazy var board = Board (boardUpdateDelegate: self)
@@ -24,6 +25,8 @@ class robotPageViewController: UIViewController , BoardUpdateDelegate{
         //we want to generate a random robot name
         //we want to tell the Game page that we want to play against the computer, the ROBOTVSHUMAN FUNCTION.
         //we want to set saved player name and cool robot name to display instead of "X" and "O" in messager Label
+        robotImage.layer.cornerRadius = robotImage.bounds.width / 2.0
+        
         
         robotName =
        board.robot.coolRobotNameGenerator()
@@ -45,12 +48,12 @@ class robotPageViewController: UIViewController , BoardUpdateDelegate{
         player = playerName.text ?? "player 1"
         
         
-    performSegue(withIdentifier: "gameRobotSegue", sender: self)
+    performSegue(withIdentifier: "robotToGame", sender: self)
     
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "gameRobotSegue" {
+        if segue.identifier == "robotToGame" {
                     let viewController = segue.destination as! ViewController
                    viewController.player1Name = player
             viewController.player2Name =
