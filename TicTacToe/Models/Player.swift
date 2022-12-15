@@ -26,11 +26,7 @@ class Player : Equatable {
 
     }
     
-    func makeMove(){
-        // here we can put the human move just like the robotmove has its own move in its class
-        
-        
-    }
+  
     
     
     
